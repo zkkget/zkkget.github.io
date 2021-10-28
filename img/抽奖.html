@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="author" content="熊仔其人">
+	<title>转盘抽奖效果</title>
+	<!-- 这里是css部分 -->
+	<style>
+		.round{
+			position: relative;
+			width: 450px;
+			height: 450px;
+		}
+		.btn{
+			position:absolute;
+			top:50%;
+			left: 50%;
+			margin-top: -138px;
+			margin-left: -94px;
+		}
+	</style>
+</head>
+
+<body>
+	  <div class="round">
+       <div class="box">
+           <img src="turntable.png" alt="">
+       </div>
+       <div class="btn">
+           <img src="pointer.png" alt="">
+       </div>
+   </div>
+	<script>
+		var round=document.getElementsByClassName("round")[0];
+		var box=round.getElementsByClassName("box")[0].children[0];
+		var btn=round.getElementsByClassName("btn")[0];
+		//中奖几率
+		let aa=[1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7];
+		let bb = []
+		for(var i=1;i<=34;i++){
+			bb.push(i)
+		}
+		//console.log(bb)
+		btn.onclick=function(){
+			//var deg=Math.floor(Math.random()*360);
+			if(aa.length == 0){
+				alert("抽奖结束")
+			}else{
+				var result= Math.floor(Math.random() * aa.length);
+				var deg = randomNum((aa[result]-1)*51,aa[result]*51);
+				var num=8;
+				var rotateDeg=num*360+deg;
+				
+				var p = Math.floor(Math.random() * bb.length)
+				var peo = bb[p]
+				
+				box.style.transform="rotate("+rotateDeg+"deg)";
+				box.style.transition="5s";
+				setTimeout("res("+deg+","+peo+")",5000)
+				
+				aa.splice(result,1)
+				bb.splice(p,1)
+				
+			}
+		}
+		function res(deg,peo){
+			if(deg>=0&&deg<=51){
+				alert("一等奖：三只松鼠坚果超级大礼包"+", 中奖号码"+peo);
+			}else if(deg>51&&deg<=102){
+				alert("二等奖：学校对面麻辣鸡爪放开吃"+", 中奖号码"+peo)
+			}else if(deg>102&&deg<=153){
+				alert("三等奖：蟹黄堡一顿"+", 中奖号码"+peo)
+			}else if(deg>153&&deg<=204){
+				alert("四等奖：奶茶畅饮"+", 中奖号码"+peo)
+			}else if(deg>204&&deg<=255){
+				alert("五等奖：旺仔牛奶一排"+", 中奖号码"+peo)
+			}else if(deg>255&&deg<=306){
+				alert("六等奖：糖炒栗子"+", 中奖号码"+peo)
+			}else{
+				alert("安慰奖：刘浩然同款魔芋爽一袋"+", 中奖号码"+peo)
+			}
+			box.dataset.rotate=deg;
+			box.style.transform="rotate("+deg+"deg)";
+			box.style.transition="";
+		}
+		//生成从minNum到maxNum的随机数
+		function randomNum(minNum,maxNum){ 
+			switch(arguments.length){ 
+				case 1: 
+					return parseInt(Math.random()*minNum+1,10); 
+				break; 
+				case 2: 
+					return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
+				break; 
+					default: 
+						return 0; 
+					break; 
+			} 
+		}
+		
+	
+
+	</script>
+</body>
+
+</html>
