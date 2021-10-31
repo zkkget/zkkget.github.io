@@ -1312,8 +1312,8 @@ canvas:not(#ribbon-canvas),
   --sidebar-bg: #f6f8fa;
   --btn-hover-color: #ff7242;
   --btn-color: #fff;
-  --btn-bg: #9370db;
-  --text-bg-hover: rgba(147,112,219,0.7);
+  --btn-bg: #49b1f5;
+  --text-bg-hover: rgba(73,177,245,0.7);
   --light-grey: #eee;
   --white: #fff;
   --text-highlight-color: #1f2d3d;
@@ -1350,6 +1350,19 @@ body {
 }
 input::placeholder {
   color: var(--font-color);
+}
+#web_bg {
+  position: fixed;
+  z-index: -999;
+  width: 100%;
+  height: 100%;
+  background: url(https://zkk-1300025204.cos.ap-nanjing.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211031220659.jpg);
+  background-attachment: local;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 h1,
 h2,
@@ -1420,7 +1433,7 @@ table td {
   vertical-align: middle;
 }
 *::selection {
-  background: #69c46d;
+  background: #00c4b6;
   color: #f7f7f7;
 }
 button {
@@ -1442,7 +1455,7 @@ a {
   overflow-wrap: break-word;
 }
 a:hover {
-  color: #9370db;
+  color: #49b1f5;
 }
 .is-center {
   text-align: center;
@@ -1791,7 +1804,7 @@ blockquote footer cite:before {
   transition: color 0.2s;
 }
 #article-container .highlight-tools .copy-button:hover {
-  color: #9370db;
+  color: #49b1f5;
 }
 #article-container .gutter {
   -webkit-user-select: none;
@@ -1876,7 +1889,7 @@ blockquote footer cite:before {
 .article-sort {
   margin-left: 0.5rem;
   padding-left: 1rem;
-  border-left: 2px solid #d1c1f0;
+  border-left: 2px solid #aadafa;
 }
 .article-sort-title {
   position: relative;
@@ -1895,7 +1908,7 @@ blockquote footer cite:before {
   z-index: 1;
   width: 0.5rem;
   height: 0.5rem;
-  border: 0.25rem solid #9370db;
+  border: 0.25rem solid #49b1f5;
   border-radius: 0.5rem;
   background: var(--card-bg);
   content: '';
@@ -1913,7 +1926,7 @@ blockquote footer cite:before {
   z-index: 0;
   width: 0.1rem;
   height: 1.5em;
-  background: #d1c1f0;
+  background: #aadafa;
   content: '';
 }
 .article-sort-item {
@@ -1945,7 +1958,7 @@ blockquote footer cite:before {
   left: calc(-1rem - 17px);
   width: 0.3rem;
   height: 0.3rem;
-  border: 0.15rem solid #9370db;
+  border: 0.15rem solid #49b1f5;
   border-radius: 0.3rem;
   background: var(--card-bg);
   content: '';
@@ -1965,7 +1978,7 @@ blockquote footer cite:before {
   font-size: 1.43em;
 }
 .article-sort-item.year:hover:before {
-  border-color: #9370db;
+  border-color: #49b1f5;
 }
 .article-sort-item.year:before {
   border-color: #ff7242;
@@ -1989,7 +2002,7 @@ blockquote footer cite:before {
   -webkit-line-clamp: 2;
 }
 .article-sort-item-title:hover {
-  color: #9370db;
+  color: #49b1f5;
   -webkit-transform: translateX(10px);
   -moz-transform: translateX(10px);
   -o-transform: translateX(10px);
@@ -2048,7 +2061,7 @@ blockquote footer cite:before {
   color: var(--font-color);
 }
 #page .category-lists .category-list a:hover {
-  color: #9370db;
+  color: #49b1f5;
 }
 #page .category-lists .category-list .category-list-count {
   margin-left: 0.4rem;
@@ -2086,7 +2099,7 @@ blockquote footer cite:before {
   top: 0.7em;
   width: 0.43em;
   height: 0.43em;
-  border: 0.215em solid #9370db;
+  border: 0.215em solid #49b1f5;
   border-radius: 0.43em;
   background: transparent;
   content: '';
@@ -2401,7 +2414,7 @@ blockquote footer cite:before {
   -webkit-line-clamp: 2;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-title:hover {
-  color: #9370db;
+  color: #49b1f5;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap {
   color: #858585;
@@ -2432,7 +2445,7 @@ blockquote footer cite:before {
   color: #858585;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a:hover {
-  color: #9370db;
+  color: #49b1f5;
   text-decoration: underline;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .content {
@@ -2490,7 +2503,7 @@ blockquote footer cite:before {
   transition: all 0.3s;
 }
 .tag-cloud-list a:hover {
-  color: #9370db !important;
+  color: #49b1f5 !important;
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -2633,7 +2646,7 @@ blockquote footer cite:before {
   padding: 0 0.2rem;
 }
 #aside-content .card-tag-cloud a:hover {
-  color: #9370db !important;
+  color: #49b1f5 !important;
 }
 #aside-content .aside-list > span {
   display: block;
@@ -2715,7 +2728,7 @@ blockquote footer cite:before {
 }
 #aside-content .aside-list > .aside-list-item .content > .title:hover,
 #aside-content .aside-list > .aside-list-item .content > .comment:hover {
-  color: #9370db;
+  color: #49b1f5;
 }
 #aside-content .aside-list > .aside-list-item.no-cover {
   min-height: 4.4em;
@@ -3152,6 +3165,121 @@ blockquote footer cite:before {
     transform: scale(0.7);
   }
 }
+#calendar a {
+  text-decoration: none;
+}
+.cal-head {
+  margin-bottom: 15px;
+  position: relative;
+  height: 20px;
+  padding: 8px 6px 2px 6px;
+}
+.cal-prev,
+.cal-next {
+  position: absolute;
+  top: 9px;
+  width: 16px;
+  height: 18px;
+  padding: 3px 4px;
+  border: 1px solid transparent;
+  color: #333;
+  outline: 0;
+}
+.cal-prev {
+  left: 8px;
+}
+.cal-prev:before {
+  border-right: 9px solid #333;
+}
+.cal-next {
+  right: 8px;
+}
+.cal-next:before {
+  border-left: 9px solid #333;
+}
+.cal-prev:before,
+.cal-next:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.cal-title {
+  width: 120px;
+  margin: 0 auto;
+  color: #333;
+  font: bold 14px/18px Arial;
+  text-align: center;
+}
+.cal-title a {
+  border: 1px solid transparent;
+  color: #9f9f9f;
+}
+.cal,
+.cal th,
+.cal td {
+  border: 1px solid #d1d1d1;
+}
+.cal {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  table-layout: fixed;
+  width: 100%;
+  margin: 0;
+}
+.cal th {
+  background: #9f9f9f;
+  color: #fff;
+  border-width: 0 1px 1px 0;
+  font-weight: 700;
+}
+.cal td {
+  border-width: 0 1px 1px 0;
+}
+.cal tbody a {
+  background-color: #007acc;
+  color: #fff;
+  display: block;
+  font-weight: 700;
+}
+.cal tbody .cal-today {
+  background-color: #66ecfd;
+  color: #fff;
+}
+.cal .cal-gray {
+  color: #bbb8b8;
+}
+[data-theme='dark'] .cal .cal-gray {
+  color: #505050;
+}
+.cal th,
+.cal td {
+  font-weight: normal;
+  line-height: 2.5625;
+  padding: 0;
+  text-align: center;
+}
+[data-theme='dark'] .cal .cal-foot {
+  color: #9f9f9f;
+}
+.cal .cal-foot {
+  color: #2ca6cb;
+}
+.cal-title a:hover,
+.cal-prev:hover,
+.cal-next:hover,
+.cal .cal-foot:hover,
+.cal .cal-foot:focus,
+.cal tbody a:hover,
+.cal tbody a:focus {
+  background-color: #686868;
+  color: #fff;
+  cursor: pointer;
+}
 #post-comment .comment-head {
   margin-bottom: 1rem;
 }
@@ -3222,7 +3350,7 @@ blockquote footer cite:before {
 }
 #footer {
   position: relative;
-  background: #9370db;
+  background: #49b1f5;
   background-attachment: local;
   background-position: bottom;
   -webkit-background-size: cover;
@@ -3253,7 +3381,7 @@ blockquote footer cite:before {
 #page-header {
   position: relative;
   width: 100%;
-  background-color: #9370db;
+  background-color: #49b1f5;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -3423,7 +3551,7 @@ blockquote footer cite:before {
 #page-header.nav-fixed #nav a:hover,
 #page-header.nav-fixed #nav #site-name:hover,
 #page-header.nav-fixed #nav #toggle-menu:hover {
-  color: #9370db;
+  color: #49b1f5;
 }
 #page-header.nav-visible #nav {
   -webkit-transition: all 0.5s;
@@ -3518,7 +3646,7 @@ blockquote footer cite:before {
   transition: all 0.3s ease-out;
 }
 #post-info #post-meta a:hover {
-  color: #9370db;
+  color: #49b1f5;
   text-decoration: underline;
 }
 #nav {
@@ -3692,7 +3820,7 @@ blockquote footer cite:before {
   z-index: -1;
   width: 0;
   height: 3px;
-  background-color: #b39be6;
+  background-color: #80c8f8;
   content: '';
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -3721,7 +3849,7 @@ blockquote footer cite:before {
   cursor: pointer;
 }
 #pagination .page-number.current {
-  background: #7a7ff1;
+  background: #00c4b6;
   color: var(--white);
   cursor: default;
 }
@@ -3807,7 +3935,7 @@ blockquote footer cite:before {
   overflow-wrap: break-word;
 }
 #article-container a {
-  color: #858585;
+  color: #99a9bf;
 }
 #article-container a:hover {
   text-decoration: underline;
@@ -3868,9 +3996,9 @@ blockquote footer cite:before {
   margin: 0.4rem 0.4rem 0.4rem 0;
   padding: 0 0.6rem;
   width: fit-content;
-  border: 1px solid #9370db;
+  border: 1px solid #49b1f5;
   border-radius: 0.6rem;
-  color: #9370db;
+  color: #49b1f5;
   font-size: 0.85em;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3879,7 +4007,7 @@ blockquote footer cite:before {
   transition: all 0.2s ease-in-out;
 }
 #post .tag_share .post-meta__tags:hover {
-  background: #9370db;
+  background: #49b1f5;
   color: var(--white);
 }
 #post .tag_share .post_share {
@@ -3913,7 +4041,7 @@ blockquote footer cite:before {
   position: absolute;
   top: 0.1rem;
   right: 0.6rem;
-  color: #9370db;
+  color: #49b1f5;
   content: '\f1f9';
   font-size: 1rem;
 }
@@ -3922,7 +4050,7 @@ blockquote footer cite:before {
   box-shadow: 0 0 8px 0 rgba(232,237,250,0.6), 0 2px 4px 0 rgba(232,237,250,0.5);
 }
 #post .post-copyright .post-copyright-meta {
-  color: #9370db;
+  color: #49b1f5;
   font-weight: bold;
 }
 #post .post-copyright .post-copyright-info {
@@ -4288,7 +4416,7 @@ blockquote footer cite:before {
 }
 #waline-wrap {
   --waline-font-size: 1.1em;
-  --waline-theme-color: #9370db;
+  --waline-theme-color: #49b1f5;
   --waline-active-color: #ff7242;
   --waline-avatar-size: 2.75rem;
 }
@@ -4670,7 +4798,7 @@ blockquote.pullquote.right {
 .hide-block > .hide-button {
   display: inline-block;
   padding: 0.3rem 1rem;
-  background: #9370db;
+  background: #49b1f5;
   color: var(--white);
 }
 .hide-inline > .hide-button.open,
@@ -5145,7 +5273,7 @@ blockquote.pullquote.right {
   width: 1.5em;
 }
 #article-container .tabs > .nav-tabs > .tab.active button {
-  border-top: 2px solid #9370db;
+  border-top: 2px solid #49b1f5;
   background: var(--tab-button-active-bg);
   cursor: default;
 }
